@@ -1,87 +1,69 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <title>FigmaToWeb</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="color-scheme" content="light">
+  <title>02 - Agendamento Express</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=Plus+Jakarta+Sans:wght@400;500;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <div class="page-wrapper">
-        <main class="form-card">
-            <form class="proffy-form">
-                <section class="section">
-                    <h1>Seus dados</h1>
-                    <div class="input-block">
-                        <label for="name">Nome completo</label>
-                        <input id="name" type="text" placeholder="" />
-                    </div>
-                    <div class="input-block">
-                        <label for="avatar">Link da sua foto <span>(comece com //http)</span></label>
-                        <input id="avatar" type="text" placeholder="" />
-                    </div>
-                    <div class="input-block">
-                        <label for="whatsapp">Whatsapp <span>(somente números)</span></label>
-                        <input id="whatsapp" type="text" placeholder="" />
-                    </div>
-                    <div class="input-block">
-                        <label for="bio">Biografia</label>
-                        <textarea id="bio" rows="5" placeholder=""></textarea>
-                    </div>
-                </section>
+  <main class="app-shell">
+    <section class="phone-frame" aria-label="02 - Agendamento Express">
+      <header class="top-bar">
+        <button class="icon-button" type="button" aria-label="Voltar">←</button>
+        <h1>DogWalker</h1>
+        <div class="avatar-pill" aria-hidden="true"></div>
+      </header>
 
-                <section class="section">
-                    <h2>Sobre a aula</h2>
-                    <div class="input-block">
-                        <label for="subject">Matéria</label>
-                        <select id="subject">
-                            <option value="" disabled selected>Selecione qual você quer ensinar</option>
-                        </select>
-                    </div>
-                    <div class="input-block">
-                        <label for="cost">Custo da sua hora por aula <span>(em R$)</span></label>
-                        <input id="cost" type="text" placeholder="" />
-                    </div>
-                </section>
+      <section class="content-panel">
+        <article class="hero-card">
+          <p class="eyebrow">PASSEIO EXPRESS</p>
+          <h2>Passeadores próximos agora</h2>
+          <p class="lead">Profissionais disponíveis para iniciar em até 30 minutos na Asa Norte.</p>
+        </article>
 
-                <section class="section">
-                    <div class="section-head">
-                        <h2>Horários disponíveis</h2>
-                        <button type="button" class="button-link">+ Novo horário</button>
-                    </div>
-                    <div class="schedule-row">
-                        <div class="input-block half">
-                            <label for="weekday">Dia da semana</label>
-                            <select id="weekday">
-                                <option value="" disabled selected>Selecione o dia</option>
-                            </select>
-                        </div>
-                        <div class="input-block small">
-                            <label for="from">Das</label>
-                            <input id="from" type="text" placeholder="" />
-                        </div>
-                        <div class="input-block small">
-                            <label for="to">Até</label>
-                            <input id="to" type="text" placeholder="" />
-                        </div>
-                    </div>
-                </section>
+        <article class="map-card" aria-label="Mapa de passeadores">
+          <img class="map-bg" src="assets/map-bg.png" alt="Mapa de localização">
+          <span class="pin pin-a"></span>
+          <span class="pin pin-b"></span>
+          <span class="pin pin-c"></span>
+          <button class="mini-chip" type="button" aria-label="Mostrar mapa">↗</button>
+        </article>
 
-                <footer class="form-footer">
-                    <div class="footer-info">
-                        <div class="icon-box" aria-hidden="true"></div>
-                        <div>
-                            <strong>Importante!</strong>
-                            <span>Preencha todos os dados</span>
-                        </div>
-                    </div>
-                    <button type="submit" class="button-primary">
-                        <img src="assets/aula.svg" alt="Salvar" />
-                        Salvar cadastro
-                    </button>
-                </footer>
-            </form>
-        </main>
-    </div>
+        <section class="results-card">
+          <div class="section-heading">
+            <h3>3 PASSEADORES ATIVOS</h3>
+            <a href="#" class="text-link">Ver todos no mapa</a>
+          </div>
+
+          <article class="walker-card">
+            <span class="avatar-badge"></span>
+            <div class="walker-copy"></div>
+          </article>
+          <article class="walker-card">
+            <span class="avatar-badge"></span>
+            <div class="walker-copy"></div>
+          </article>
+          <article class="walker-card">
+            <span class="avatar-badge"></span>
+            <div class="walker-copy"></div>
+          </article>
+        </section>
+
+        <button class="cta-button" type="button">SOLICITAR PASSEIO AGORA</button>
+      </section>
+
+      <nav class="bottom-nav" aria-label="Navegação principal">
+        <a class="nav-link" href="#">Explorar</a>
+        <a class="nav-link active" href="#">Express</a>
+        <a class="nav-link" href="#">Mensagens</a>
+        <a class="nav-link" href="#">Perfil</a>
+      </nav>
+    </section>
+  </main>
 </body>
 </html>
